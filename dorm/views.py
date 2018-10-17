@@ -16,7 +16,7 @@ DORM_CONF = {
 @blue_dorm.route('/number')
 def show_all_dorm_number():
 	'''
-	domain/dorm/number
+	http://127.0.0.1:8577/dorm/number
 	'''
 	return 'show_all_dorm_number %s' % list(DORM_CONF.keys())
 	
@@ -24,7 +24,7 @@ def show_all_dorm_number():
 @blue_dorm.route('/members')
 def show_all_dorm_members():
 	'''
-	domain/dorm/members
+	http://127.0.0.1:8577/dorm/members
 	'''
 	user_list = list()
 	for num, user in DORM_CONF.items():

@@ -17,10 +17,16 @@ CAMPUS_CONF = dict(
 
 @blue_campus.route('/all')
 def get_all_campus():
+	"""
+	http://127.0.0.1:8577/campus/all
+	"""
 	return 'get_all_campus %s' % CAMPUS_CONF.keys()
 
 @blue_campus.route('/desc')
 def desc_all_campus():
+	"""
+	http://127.0.0.1:8577/campus/desc
+	"""
 	show_list = list()
 	for area, keywords in CAMPUS_CONF.items():
 		for key in keywords:
